@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1056825015311",
+    "firebase_url": "https://wb-generator.firebaseio.com",
+    "project_id": "wb-generator",
+    "storage_bucket": "wb-generator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056825015311:android:f2f1012d0d3968db",
+        "android_client_info": {
+          "package_name": "com.example.suganraj.wbgenerator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056825015311-d5r3p4subqle208ti4i349pbi9h1o2vr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR2ZlaqtSw7IrV3uOvnMesVRjfNWuP9-0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
