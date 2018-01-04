@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    tools:context="com.example.suganraj.wbgenerator.UserView">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:text="-------Service Information-------"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_bill_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="10dp"
+                android:text="Name                :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/user_bill_aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/user_bill_name"
+                android:layout_marginTop="10dp"
+                android:text="Aadhar number       :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/user_bill_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_bill_aadhar"
+                android:layout_alignStart="@+id/user_bill_aadhar"
+                android:layout_below="@+id/user_bill_aadhar"
+                android:layout_marginTop="10dp"
+                android:text="Address             :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/user_bill_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_bill_address"
+                android:layout_alignStart="@+id/user_bill_address"
+                android:layout_below="@+id/user_bill_address"
+                android:layout_marginTop="10dp"
+                android:text="Phone number        :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_bill_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="-------Meter Information-------"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_bill_current_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_bill_phone"
+                android:layout_alignStart="@+id/user_bill_phone"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="10dp"
+                android:text="Current Reading     :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/user_bill_previous_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_bill_current_reading"
+                android:layout_alignStart="@+id/user_bill_current_reading"
+                android:layout_below="@+id/user_bill_current_reading"
+                android:layout_marginTop="10dp"
+                android:text="Previous Reading    :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/user_bill_consumption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_bill_previous_reading"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/user_bill_previous_reading"
+                android:layout_below="@+id/user_bill_previous_reading"
+                android:layout_marginTop="10dp"
+                android:text="Consumption       :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_bill_consumption"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="-------Payment Information-------"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_bill_maintenance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView10"
+                android:text="Maintenance charge        :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/user_bill_paid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/user_bill_total_charge"
+                android:layout_marginTop="10dp"
+                android:text="Paid                :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/payment"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_bill_paid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#f65757"
+                android:text="Payment" />
+
+            <TextView
+                android:id="@+id/user_bill_total_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/user_bill_cost_liter"
+                android:layout_marginTop="10dp"
+                android:text="Total Charge        :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/user_bill_cost_liter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_bill_maintenance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Cost per liter     :"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/download_txt"
+                android:src="@mipmap/downloads"
+                android:paddingLeft="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="233dp"
+                android:layout_marginStart="233dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

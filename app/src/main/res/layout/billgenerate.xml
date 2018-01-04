@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    tools:context="com.example.suganraj.wbgenerator.BillGenerate">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/generate_bill_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Name"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/generate_bill_aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate_bill_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Aadhar Number"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/generate_bill_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate_bill_aadhar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Address"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/generate_bill_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate_bill_address"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Phone number"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate_bill_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="-------Reading Information-------"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/generate_bill_previous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Previous Reading"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/generate_bill_current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate_bill_previous"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Current Reading"
+                android:textColorHint="#ffffff" />
+
+            <EditText
+                android:id="@+id/generate_bill_maintenance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate_bill_current"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Maintenance Charge"
+                android:textColorHint="#ffffff" />
+
+            <EditText
+                android:id="@+id/generate_bill_cost_per_liter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate_bill_maintenance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Cost Per Litres"
+                android:textColorHint="#ffffff" />
+
+            <Button
+                android:id="@+id/generate_bill_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secret_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#f65757"
+                android:text="Generate" />
+
+            <EditText
+                android:id="@+id/secret_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate_bill_cost_per_liter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Secret Code"
+                android:inputType="textPassword"
+                android:textColorHint="#ffffff" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
